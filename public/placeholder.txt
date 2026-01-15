@@ -1,0 +1,17 @@
+INSTRUCCIONES PARA ASSETS:
+
+1. Agrega tu foto de perfil como: profile.jpg
+   - Dimensiones recomendadas: 400x400px mínimo
+   - Formato: JPG o PNG
+   - Debe ser cuadrada para el círculo del hero
+
+2. Agrega tu CV como: cv-maicol-martinez.pdf
+   - Puedes usar el HTML que generamos en:
+     C:\Users\maico\Documents\CV_Maicol_Martinez_2025.html
+   - Ábrelo en Chrome y guárdalo como PDF (Ctrl+P → Guardar como PDF)
+
+3. (Opcional) Agrega imágenes de proyectos en carpeta /projects:
+   - m4markets.png
+   - flyagency.png
+   - gccapital.png
+   - innova-community.png

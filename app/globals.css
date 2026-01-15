@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Maicol Martinez - Personal Brand Theme */
+  /* Dark Cyan + Gold accents (Innova style) */
+
+  /* Backgrounds */
+  --background: #0a0a0a;
+  --background-secondary: #0f0f0f;
+  --card: #141414;
+  --card-hover: #1a1a1a;
+  --card-elevated: #1e1e1e;
+
+  /* Borders */
+  --border: #262626;
+  --border-hover: #333333;
+  --border-focus: #0099cc;
+
+  /* Text */
+  --foreground: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #b8b8b8;
+  --muted: #1f1f1f;
+  --muted-foreground: #8a8a8a;
+
+  /* Primary - Cyan (Tech/Developer) */
+  --primary: #0099cc;
+  --primary-hover: #007aa3;
+  --primary-foreground: #ffffff;
+
+  /* Accent - Gold (Business/Trading) */
+  --accent: #e6a800;
+  --accent-hover: #cc9600;
+  --accent-foreground: #000000;
+
+  /* Secondary */
+  --secondary: #1f1f1f;
+  --secondary-foreground: #ffffff;
+
+  /* Status */
+  --success: #10b981;
+  --success-hover: #059669;
+  --danger: #ef4444;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #0099cc, #00ccff);
+  --gradient-accent: linear-gradient(135deg, #e6a800, #ffd700);
+  --gradient-success: linear-gradient(135deg, #10b981, #34d399);
+
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: var(--border);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
+}
+
+/* Glow effects */
+.glow-primary {
+  box-shadow: 0 0 30px rgba(0, 153, 204, 0.4);
+}
+
+.glow-accent {
+  box-shadow: 0 0 30px rgba(230, 168, 0, 0.4);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0099cc, #00ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-gold {
+  background: linear-gradient(135deg, #e6a800, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section spacing */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Service card backgrounds - Solo 3 colores */
+.bg-service-primary {
+  background: var(--gradient-primary);
+}
+
+.bg-service-accent {
+  background: var(--gradient-accent);
+}
+
+.bg-service-success {
+  background: var(--gradient-success);
+}
+
+/* Text color utilities */
+.text-accent {
+  color: var(--accent);
+}
+
+.text-success {
+  color: var(--success);
+}
